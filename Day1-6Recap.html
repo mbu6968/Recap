@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Day 1 to 6 Recap</h1> 
+    <h5>Day 1 - Introduction to JavaScript</h5> 
+    <h5>Day 2 - Data Types & Operators</h5>
+    <h5>Day 3 - Conditional Statements</h5>
+    <h5>Day 4 - Arrays & Loops</h5>
+    <h5>Day 5 - Loops Practice</h5>
+    <h5> Day 6 - Functions</h5>
+
+    <script>
+        //Day 1 introduction to javascript
+        console.log("my name is"+" mohammed" +
+         " i am " + 25 +" years old." + " my favorite color is "
+         +"Red.");
+       
+         var name= "mohammed";
+         var age= 25;
+         var school= "bayero university";
+
+         console.log("my name is " + name + ", i am " + age + " years old "+
+         " and i study at " + school +".");
+
+         // Day 2
+
+        var name = "mohammed";
+        let isStudent = true;
+
+        console.log(name);      
+        console.log(age);       
+        console.log(isStudent); 
+
+        // Use arithmetic operators (+, -, *, /, %)
+        let a=10;
+        let b=5;
+         console.log("Add " + a + b);
+         console.log("subt " + a - b);
+         console.log("mult " + a * b);
+         console.log("divide " + a / b);
+         console.log("modulo " + a % b);
+        
+         // Day 3
+         let num =12;
+         if(num > 0){
+            console.log("number is positive")
+         }
+            else if(num < 0){
+                console.log("number is negative")
+            }
+            else{
+                console.log("number is zero")
+            };
+
+       // if age ≥ 18
+        
+        if(age >= 18){
+            console.log("You are eligible to vote.");
+        }
+        else{
+            console.log("You are not eligible to vote.");
+        }
+
+        // Day 4
+
+        var fruits= ["apple", "banana", "orange", "mango", "grape"];
+        for(var i=0; i<fruits.length; i++){
+            console.log(fruits[i]);
+        };
+     //1 to 20
+        for(var i=0; i<=20; i++){
+            console.log(i);
+        }
+      
+     // Day 5 loops 
+
+        //print even numbers from 0 to 50
+     for(var i=0; i<=50; i=i+2){
+        console.log(i);
+     }  
+
+     //Use a for loop to print the multiplication table of any number (e.g., 5).
+        let n=5;
+        for(var i=1; i<=10; i++){
+            console.log(n + " x " + i + " = " + (n*i));
+        }
+
+        // Day 6 functions
+
+        // greet user
+        function greetUser(name){
+            console.log("Hello, " + name );
+        }
+        greetUser("Mohammed");
+         
+        // add two numbers
+        function add(a,b){
+            return a + b;
+        }
+          add(10, 15);
+         
+          // check even or odd
+          function checkeven(number){
+            if(number % 2 == 0){
+                console.log("even is number");
+            }
+            else{
+                console.log("odd is number");
+            }
+          }
+            checkeven(7);
+
+  </script>
+</body>
+</html>
